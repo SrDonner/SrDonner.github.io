@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio showcasing projects and contact information.">
+    <meta name="keywords" content="portfolio, web developer, projects, contact">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<main>
+    <body>
+    <style>
+        /* assets/css/styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf5;
+    color: #333;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+p {
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.2em;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1abc9c;
+}
+
+/* Proyectos */
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    }
+    .project a:hover {
+    background-color: #16a085;
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#skills li {
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #ddd;
+}
+
+/* Formulario de contacto */
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #16a085;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
+.project-image-1,
+.project-image-2,
+.project-image-3 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.project-image-1 img,
+.project-image-2 img,
+.project-image-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.project:hover .project-image-1 {
+    height: 250px; 
+}
+.project:hover .project-image-2 {
+    height: 200px; 
+}
+.project:hover .project-image-3 {
+    height: 300px; 
+}
+    </style>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am Yhonaykel Alvarez, also know as SrDonner, a web developer with a passion for creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Survey Web Page</h3>
+            <div class="project-image-1">
+                <img src="https://i.postimg.cc/3NZNzX0V/Screenshot-2025-05-02-142829.png" alt="Survey Web Page">
+            </div>
+            <p>Sample survey page, to collect information to improve customer service.</p>
+        </div>
+        <div class="project">
+            <h3>Technical Documentation Page</h3>
+            <div class="project-image-2">
+                <img src="https://i.postimg.cc/3NZNzX0V/Screenshot-2025-05-02-142829.png" alt="Technical Documentation Page">
+            </div>
+            <p>Simple but functional Documentation page about JavaScript</p>
+        </div>
+        <div class="project">
+            <h3>Product Landing Page</h3>
+            <div class="project-image-3">
+                <img src="https://i.postimg.cc/PfbCLjVy/Screenshot-2025-05-02-143244.png" alt="Product Landing Page">
+            <p>Preview of a web page to market a product.</p>
+        </div>
+    </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="contacto.srdonner@gmail.com">contacto.srdonner@gmail.com</a></p>
+                <p>LinkedIn: <a href="www.linkedin.com/in/yhonaykel-alvarez-a87406291" target="_blank">Yhonaykel Alvarez</a></p>
+                <p>GitHub: <a href="https://github.com/SrDonner" target="_blank">SrDonner</a></p>
+            </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Yhonaykel Alvarez. All rights reserved.</p>
+    </footer>
+    </body>
+</main>
